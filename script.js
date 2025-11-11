@@ -589,7 +589,7 @@ scene.add(planet);
 const ringTexts = [
   'Galaxy of thanks from junn',//untuk deskripsi planet layer 1
   "Barakallah fi Umrik org Astrophile",//untuk deskripsi planet layer 2
-  "Wedee sudah berajnjak dewasa...sehat selalu ya senn",//untuk deskripsi planet layer 3
+  "Wedee sudah beranjak dewasa...sehat selalu ya senn",//untuk deskripsi planet layer 3
   "07/12/2025",//untuk deskripsi planet layer 4
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
@@ -788,7 +788,7 @@ let galaxyAudio = null;
 
 function preloadGalaxyAudio() {
   const audioSources = [
-   "https://www.youtube.com/watch?v=d4OMqGKBl6E&list=RDd4OMqGKBl6E&start_radio=1&ab_channel=ARS"
+   "https://www.youtube.com/watch?v=HRK_-LNDpcQ&list=RDHRK_-LNDpcQ&start_radio=1"
   ];
 
   const randomIndex = Math.floor(Math.random() * audioSources.length);
@@ -1067,7 +1067,7 @@ function createHintText() {
   canvas.width = canvas.height = canvasSize;
   const context = canvas.getContext('2d');
   const fontSize = 50;
-  const text = 'Happy Girlfriend Day!';
+  const text = 'Barakallah Fi Umrik';
   context.font = `bold ${fontSize}px Arial, sans-serif`;
   context.textAlign = 'center';
   context.textBaseline = 'middle';
