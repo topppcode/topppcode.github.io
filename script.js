@@ -6,8 +6,8 @@ import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
 const scene = new THREE.Scene();
 scene.fog = new THREE.FogExp2(0x000000, 0.0015);
 
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 100000);
-camera.position.set(0, 5, 30);
+const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 100000);
+camera.position.set(0, 5, 20);
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
@@ -18,14 +18,14 @@ document.getElementById('container').appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 controls.autoRotate = true;
-controls.autoRotateSpeed = 5;
+controls.autoRotateSpeed = 0,05;
 controls.enabled = false;
 controls.target.set(0, 0, 0);
 controls.enablePan = false;
 controls.minDistance = 15;
 controls.maxDistance = 300;
-controls.zoomSpeed = 3;
-controls.rotateSpeed = 3;
+controls.zoomSpeed = 0,03;
+controls.rotateSpeed = 0,03;
 controls.update();
 
 function createGlowMaterial(color, size = 128, opacity = 0.55) {
