@@ -589,7 +589,7 @@ const ringTexts = [
   'Barakallah Fi Umrik',//untuk deskripsi planet layer 1
   "Selamat bertambah usia senn",//untuk deskripsi planet layer 2
   "Sehat selalu dan sukses trus",//untuk deskripsi planet layer 3
-  "07/12/2025",//untuk deskripsi planet layer 4
+  "Happy Level Up Day",//untuk deskripsi planet layer 4
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
 
@@ -1066,7 +1066,7 @@ function createHintText() {
   canvas.width = canvas.height = canvasSize;
   const context = canvas.getContext('2d');
   const fontSize = 50;
-  const text = 'Happy Level Up Day Astrophile!';
+  const text = 'Wedeee beranjak dewasa!';
   context.font = `bold ${fontSize}px Arial, sans-serif`;
   context.textAlign = 'center';
   context.textBaseline = 'middle';
